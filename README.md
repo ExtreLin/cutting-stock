@@ -1,9 +1,10 @@
-Felipe Augusto Dornelas
-Operational Research - Cutting Stock
-2012.12
+#Cutting-Stock
 
-Setup
-=====
+C++ heuristic solver for the [Cutting-Stock](http://en.wikipedia.org/wiki/Cutting_stock_problem), a classic Operational Research problem.
+
+Please refer to the [CuttingStock.pdf](CuttingStock.pdf) document for a mathematical background and an algorithmic discussion.
+
+##Setup
 
 You need to install the GLPK C libraries. On a reasonably recent version of Ubuntu Linux this can be made as follows:
 
@@ -11,8 +12,7 @@ You need to install the GLPK C libraries. On a reasonably recent version of Ubun
 
 Make sure you have installed a decent version of the gcc c++ (g++) compiler and the make utility.
 
-Compile
-=======
+##Compilation
 
 Switch to the Source directory, and run the command make. This will compile the code, and should generate no errors neither warnings.
 
@@ -20,8 +20,7 @@ You can optionally run the unit-test suite to make sure everything is in place:
 
     make unit-tests
 
-Execution
-=========
+##Execution
 
 Once you have compiled, execute the program cutting-stock. The usage is as follows:
 
@@ -54,8 +53,7 @@ Once you have compiled, execute the program cutting-stock. The usage is as follo
 Optionally you can execute the exact integer solution by invoking the GLPK standalone solver (glpsol) with the MathProg model that is defined inside the MathProg directory.
 
 
-Execution Examples
-==================
+## Examples
 
 In order to solve using the heuristic and best-local-bound:
 
