@@ -1,10 +1,12 @@
-#Cutting-Stock
+# Cutting-Stock
 
 C++ heuristic solver for the [Cutting-Stock](http://en.wikipedia.org/wiki/Cutting_stock_problem), a classic Operational Research problem.
 
 Please refer to the [CuttingStock.pdf](CuttingStock.pdf) document for a mathematical background and an algorithmic discussion.
 
-##Setup
+**WARNING**: this project is unmaintained. It needs some refactoring and clean-up. One day I might have time do do that.
+
+## Setup
 
 You need to install the GLPK C libraries. On a reasonably recent version of Ubuntu Linux this can be made as follows:
 
@@ -12,7 +14,7 @@ You need to install the GLPK C libraries. On a reasonably recent version of Ubun
 
 Make sure you have installed a decent version of the gcc c++ (g++) compiler and the make utility.
 
-##Compilation
+## Compilation
 
 Switch to the Source directory, and run the command make. This will compile the code, and should generate no errors neither warnings.
 
@@ -20,7 +22,7 @@ You can optionally run the unit-test suite to make sure everything is in place:
 
     make unit-tests
 
-##Execution
+## Execution
 
 Once you have compiled, execute the program cutting-stock. The usage is as follows:
 
@@ -59,7 +61,7 @@ In order to solve using the heuristic and best-local-bound:
 
     ./cutting-stock -s heuristic -b best-local-bound data/instance{i}.dat
 
-where {i} can be from 1 to 24. Ex: data/instance3.dat
+where `{i}` can be from 1 to 24. Ex: `data/instance3.dat`
 
 To execute the exact solution with depth-first:
 
