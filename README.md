@@ -4,7 +4,7 @@ C++ heuristic solver for the [Cutting-Stock](http://en.wikipedia.org/wiki/Cuttin
 
 Please refer to the [CuttingStock.pdf](CuttingStock.pdf) document for a mathematical background and an algorithmic discussion.
 
-**WARNING**: this project is unmaintained. It needs some refactoring and clean-up. One day I might have time do do that.
+**WARNING**: this project is unmaintained. It needs some refactoring and clean-up. One day I may have time do do that.
 
 ## Setup
 
